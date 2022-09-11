@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Свойства для корректного отображения картинок */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Свойства для обнуления курсива у address */
+address {
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #212121;
+}
+
+.title{
+    margin-top: 20px;
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list{
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list__item{
+    margin-top: 15px;
+    border-bottom: 1px solid #212121;
+}
+
+.input-wrapper{
+    position: relative;
+    display: flex;
+}
+
+.input-text{
+    padding: 3px 20px;  
+    outline: none;
+    border: 1px solid #212121;
+    border-radius: 5px;
+
+    transition: 250ms;
+
+    font-size: 20px;
+}
+
+.clear-input-btn-shown {
+    position: absolute;
+    right: -25px;
+    bottom: 0;
+    top: 0;
+
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 2px 5px;
+    border-radius: 50px;
+    border: 1px solid #212121;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.clear-input-btn-hidden{
+    position: absolute  ;
+    opacity: 0;
+}
+
+.btns-wrapper{
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.task-submit-btn, .task-delete-btn{
+    padding: 5px 20px;
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.task-submit-btn:hover,
+.task-submit-btn:focus{
+    background-color: #eee;
+}
+
+.task-submit-btn:active{
+    background-color: rgb(219, 219, 219);
+}
+
+.task-delete-btn:hover,
+.task-delete-btn:focus {
+    background-color: #eee;
+}
+
+.task-delete-btn:active {
+    background-color: rgb(219, 219, 219);
+}
