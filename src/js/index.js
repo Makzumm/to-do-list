@@ -4,8 +4,6 @@ const deleteElBtn = document.querySelector('.task-delete-btn');
 const list = document.querySelector('.list');
 const clearInputBtn = document.querySelector('.clear-input-btn-hidden');
 const confirmTaskStatus = document.createElement('button');
-const listItem = document.createElement('li');
-
 
 addElBtn.addEventListener('click', addItem);
 
@@ -25,6 +23,7 @@ function addItem() {
     const isInputFilled = inputEl.value === '';
 
     if (!isInputFilled) {
+        const listItem = document.createElement('li');
         return createItem(listItem),
             itemButtons(),
             inputEl.value = '';
