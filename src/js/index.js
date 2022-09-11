@@ -59,11 +59,11 @@ function inputClassChange(inputStatus) {
     }
 }
 
-function itemButtons() {
+// function itemButtons() {
 
-    confirmTaskStatus.type = 'submit';
-    confirmTaskStatus.classList = 'list__status-btn'
+//     confirmTaskStatus.type = 'submit';
+//     confirmTaskStatus.classList = 'list__status-btn'
 
-    list.append(confirmTaskStatus);
+//     list.append(confirmTaskStatus);
 
-}
+// }
